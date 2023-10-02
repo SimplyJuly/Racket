@@ -1,0 +1,11 @@
+#lang slideshow
+(define c (circle 10))
+(define r (rectangle 10 20))
+(define image (hc-append 100 c r))
+(define (parent size)
+  (filled-rectangle size size)
+ )
+(define (anotherlayer size)
+  (parent size)
+  )
+(anotherlayer 20)
