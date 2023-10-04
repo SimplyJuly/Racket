@@ -1,24 +1,25 @@
 #lang slideshow
-(define prompt (open-input-file "Prompt1.txt"))
+;(define prompt (open-input-file "Prompt1.txt"))
 
-(define 1st (read-char prompt))
-(display 1st)
+;(define 1st (read-char prompt))
+;(display 1st)
 
-;
-;(define (printFileCharacters filename)
-;  (define input-port (open-input-file filename))
+(define (parse filename); define method 
+  (define input-port (open-input-file filename))
   
-;  (define (readAndPrintChar)
-;    (let ((char (read-char input-port)))
-;      (cond
-;        ((eof-object? char) ; Check for end of file
-;         (close-input-port input-port)) ; Close the file
-;        (else
-;         (display char) ; Print the character
-;         (readAndPrintChar))))) ; Recursively read the next character
+  (define (parse)
+    (let ((char (read-char input-port)))
+      (cond
+        ((eof-object? char) ; Check for end of file
+         (close-input-port input-port)) ; Close the file
+        (else
+         (display char) ; Print the character
+         (parse))))) ; Recursively read the next character
   
-;  (readAndPrintChar) ; Start reading and printing characters
+  (parse) ; Start reading and printing characters
   
-;  (close-input-port input-port)) ; Close the file when done
+  (close-input-port input-port)) ; Close the file when done
 
-(close-input-port prompt)
+;type it like this (printFileCharacters "Prompt1.txt")
+
+;(close-input-port prompt)
