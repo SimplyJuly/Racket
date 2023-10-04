@@ -1,9 +1,4 @@
 #lang slideshow
-;(define prompt (open-input-file "Prompt1.txt"))
-
-;(define 1st (read-char prompt))
-;(display 1st)
-
 (define (parse filename); define method 
   (define input-port (open-input-file filename))
   
@@ -20,6 +15,9 @@
   
   (close-input-port input-port)) ; Close the file when done
 
-;type it like this (printFileCharacters "Prompt1.txt")
+(define (pie input)
+  "Hello")
 
-;(close-input-port prompt)
+(define (testing input)
+  (string-append (pie input) "exam"))
+  
