@@ -20,4 +20,6 @@
 
 (define (testing input)
   (string-append (pie input) "exam"))
-  
+
+
+;it's time to learn about conds next
