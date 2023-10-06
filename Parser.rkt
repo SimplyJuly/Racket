@@ -22,4 +22,11 @@
   (string-append (pie input) "exam"))
 
 
-;it's time to learn about conds next
+(define julio ("It's equal!"))
+
+;CONDITIONALS
+;if statements (with equality in numbers)
+(if(equal? 1 1)
+   'julio
+   'not)
+
