@@ -22,11 +22,11 @@
   (string-append (pie input) "exam"))
 
 
-(define julio ("It's equal!"))
+(define julio "It's equal!")
 
 ;CONDITIONALS
 ;if statements (with equality in numbers)
 (if(equal? 1 1)
-   'julio
+   julio
    'not)
 
