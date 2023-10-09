@@ -30,3 +30,5 @@
    julio
    'not)
 
+;Reminder to study more!
+
