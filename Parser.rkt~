@@ -16,9 +16,10 @@
   (close-input-port input-port)) ; Close the file when done
 
 (define (pie input)
-  "Hello")
+  input)
 
-(define (testing input)
+(define (testing input) ;if we call this it will run the top code too
+  (parse "Prompt1.txt")
   (string-append (pie input) "exam"))
 
 
@@ -29,4 +30,6 @@
 (if(equal? 1 1)
    julio
    'not)
+
+;Reminder to study more!
 
